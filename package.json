@@ -1,0 +1,26 @@
+{
+  "name": "RemoteControlElectron",
+  "version": "1.0.0",
+  "description": "Electron-远程控制",
+  "main": "app/main/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start:render\" \"wait-on http://localhost:3000 && npm run start:main\" ",
+    "start:main": "electron .",
+    "start:render": "cd app/renderer/src/main && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscar92420aaa/RemoteControlElectron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscar92420aaa/RemoteControlElectron/issues"
+  },
+  "homepage": "https://github.com/oscar92420aaa/RemoteControlElectron#readme",
+  "dependencies": {
+    "electron": "^8.2.0"
+  }
+}
