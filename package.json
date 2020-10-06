@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/oscar92420aaa/RemoteControlElectron#readme",
   "dependencies": {
-    "electron": "^8.2.0"
+    "electron": "^8.5.1"
   }
 }
